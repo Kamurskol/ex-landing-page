@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <!-- fonte -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600&family=Montserrat:ital,wght@0,200;0,300;0,600;0,700;0,900;1,100;1,200;1,300;1,700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Ícones -->
+<!-- copiar o link do ícone no bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+
+
+<body>
+    <!-- cabeçalho da página -->
+<header id="event-description">
+    <div id="disclaimer">
+        <!-- nome do evento aparecer com destaque no disclaimer -->
+        <h2>InDecor</h2>
+
+        <!-- texto sobre o evento -->
+        <p class="about">
+            Um evento para revolucionar sua criatividade
+        </p>
+
+         <p>Data</p>
+         <p class="event-date">Domingo, 28 de Maio, a partir da 14h</p>
+
+    </div>
+
+    <!-- será o formulário para se inscrever -->
+    <div id="sub-form">
+
+    <!-- paragrafo de texto falando para preencher o form -->
+        <p>Preencha o formulário para receber detalhes do evento</p>
+        <form>
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" name="name" placeholder="Digite seu nome">
+            </div>
+    <!-- criando outra div com a mesma classe (é a mesma coisa no css) -->
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="text" name="email" placeholder="Digite seu melhor e-mail">
+            </div>
+        <!-- campo do telefone -->
+            <div class="form-group">
+                <label for="phone">Telefone</label>
+                <input type="text" name="phone" placeholder="Número de Whatsapp">
+
+            </div>
+
+            <div class="form-group">
+                <label for="interest">Principal interesse</label>
+            <!-- selecionar alguma opção -->
+                <select name="interest" id="">
+    <!-- disable selected permite que o texto "Selecione" apareça como se fosse um placeholder -->
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="apartment">Apartamentos</option>
+                    <option value="garden">Jardins</option>
+                    <option value="other">Outro</option>
+                </select>
+
+            </div>
+        <!-- botão pra enviar  o form -->
+            <input type="submit"  class="btn" value="Quero me inscrever">
+             
+        </form>
+        
+    </div>
+
+</header>
+
+<!-- seção que terá os benefícios -->
+<section id="key-benefits">
+    <h2>O que você vai aprender</h2>
+
+ <div class="benefits">
+        <div class="benefit">
+            <div id="benefit-1" class="benefit-img"></div>
+            <p>Imagina um texto inspirador que vai mudar a vida de quem está lendo
+            </p>
+        </div>
+<!-- beneficio 2 -->
+        <div class="benefit">
+            <div id="benefit-2" class="benefit-img"></div>
+            <p>Mais um texto escrito de forma majestosa e incrivel e legal e incrivel
+            </p>
+        </div>
+    <!-- benefidcio 3 -->
+        <div class="benefit">
+            <div id="benefit-3" class="benefit-img"></div>
+            <p>Imagina um texto inspirador que vai mudar a vida de quem está lendo
+            </p>
+        </div>
+
+</div>
+
+</section>
+
+<!-- seção de local -->
+<section id="location">
+    <!-- div para o endereço -->
+    <div id="address">
+    <!-- usando um icone  -->
+         <i class="bi bi-geo-alt-fill"></i>
+<!-- div que vai conter o local do endereço -->
+         <div id="adress-detail">
+            <p>Rua do evento</p>
+            <p>Bairro tal</p>
+            <p>Abertura 14h</p>
+         </div>
+    </div>
+
+    <div id="about-location">
+        <h3>Local de destaque</h3>
+        <p>O evento será realizado em um local f#oda, oprestigiado pelos amantes de decoração, por algum motivo. Na verdade eu não sei se o local é isso tudo mesmo, só tô enchendo linguiça nesse texto.</p>
+    </div>
+</section>
+
+<!-- seção dos detalhes -->
+<section id="details">
+    <div class="detail" id="detail-1">
+        <img src="../img/hrz-3.jpg" alt="">
+        <div id="detail-description">
+            <h3>Conheça os ambientes que você vai aprender a decorar</h3>
+        </div>
+    </div>
+
+    <div class="detail" id="detail-2">
+        <div id="detail-description">
+            <h3>Detalhes</h3>
+            <!-- <ul> exemplo de uma lista com detalhes -->
+                <li>Posicionamento</li>
+                <li>Aproveitamento de espaço</li>
+                <li>Combinação de cores</li>
+                <li>Organização</li>
+                <li>E muito mais...</li>
+            </ul>
+        </div>
+        <img src="/img/hrz-4.jpg" alt="">
+    </div>
+    <div class="detail" id="detail-3">
+        <img src="img/hrz-5.jpg" alt="Sala decorada em tons escuros">
+        <h3>Objetos</h3>
+        <ul>
+            <li>Plantas</li>
+            <li>Mesas</li>
+            <li>Espelhos</li>
+            <li>Cadeiras</li>
+            <li>E muito Mais...</li>
+        </ul>
+    </div>
+</section>
+<section id="cta">
+    <h3>Gostou? Então se inscreva</h3>
+    <button class="btn">Solicitar inscrição</button>
+</section>
+
+<!-- rodapé -->
+<footer id="footer">
+    <h3>InDecor</h3>
+    <!-- exemplo de frase/lema -->
+    <p>A evolução da decoração de interiores</p>
+    <p><span>Entre em contato: </span>contato@indecor.com</p>
+    <p><span>Ou pelo telefone: </span>(55)99009999</p>
+</footer>
+</body>
+</html>
